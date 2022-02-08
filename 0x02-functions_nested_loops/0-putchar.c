@@ -1,5 +1,13 @@
 #include "main.h"
-int main (void)
+
+/**
+ * main - print _putchar
+ *
+ *
+ * Return: Si printea esta bien.
+ *
+ */
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -13,6 +21,6 @@ int main (void)
 
 	return (0);
 }
-	
+
 
 
