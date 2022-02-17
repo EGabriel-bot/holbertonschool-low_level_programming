@@ -7,7 +7,7 @@
  */
 char *cap_string(char *c)
 {
-	int in;
+	int i;
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
