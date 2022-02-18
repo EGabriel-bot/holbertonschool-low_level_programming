@@ -16,13 +16,12 @@ char *leet(char *l)
 	{
 		for (cntC = 0; c[cntC] != '\0'; cntC++)
 		{
-
 			if (l[cnt] == c[cntC])
 			{
 				l[cnt] = n[cntC];
 			}
 		}
-		l++;
+		cnt++;
 	}
 	return (l);
 }
