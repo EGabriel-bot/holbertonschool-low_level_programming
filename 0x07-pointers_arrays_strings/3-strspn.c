@@ -17,7 +17,7 @@ unsigned int _strspn(char *s, char *accept)
 		while (accept[cnt2] != '\0')
 		{
 			cnt2++;
-			if (s[cnt2] == accept[cnt])
+			if (*s == accept[cnt])
 			{
 				cnt2++;
 				break;
