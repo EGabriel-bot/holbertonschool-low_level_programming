@@ -2,9 +2,9 @@
 #include <stdlib>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * free_dog - frees dogs
+ *@d: pointer
+ * Return: nothing
  */
 void free_dog(dog_t *d)
 {
