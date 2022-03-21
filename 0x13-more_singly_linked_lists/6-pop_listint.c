@@ -17,14 +17,10 @@ int pop_listint(listint_t **head)
 	}
 	else
 	{
+		data = (*head)->n;
 		node = *head;
 		*head = (*head)->next;
 		free(node);
 	}
-<<<<<<< HEAD
-	data = (*head)->n;
-
-=======
->>>>>>> e40b8bbadd231a4ff0b6c9ef1e156179abf7ca90
 	return (data);
 }
