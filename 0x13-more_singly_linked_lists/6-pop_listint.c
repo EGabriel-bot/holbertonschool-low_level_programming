@@ -13,7 +13,7 @@ int pop_listint(listint_t **head)
 
 	if (head == NULL)
 	{
-		return (0);
+		return ('\0');
 	}
 	else
 	{
@@ -21,7 +21,10 @@ int pop_listint(listint_t **head)
 		*head = (*head)->next;
 		free(node);
 	}
+<<<<<<< HEAD
 	data = (*head)->n;
 
+=======
+>>>>>>> e40b8bbadd231a4ff0b6c9ef1e156179abf7ca90
 	return (data);
 }
