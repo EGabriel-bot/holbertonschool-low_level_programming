@@ -19,11 +19,9 @@ int pop_listint(listint_t **head)
 	{
 		return (0);
 	}
-	else
-	{
 		node = *head;
 		*head = (*head)->next;
 		free(node);
-	}
+
 	return (data);
 }
