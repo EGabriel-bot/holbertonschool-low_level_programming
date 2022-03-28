@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * read_textfile - check the code
+ *@filename: pointer to file name
+ *@letters: number of letters in file
+ * Return: number of characters in file
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -12,7 +13,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *buff;
 
 	buff = malloc(sizeof(char) * letters);
-	if(buff == NULL)
+	if (buff == NULL)
 	{
 		return (0);
 	}
