@@ -16,7 +16,7 @@ int main(int ac, char **av)
 		exit(97);
 	}
 	fd_from = open(av[1], O_RDONLY);
-	fd_to = open(av[2], O_CREAT | O_RDWR | O_TRUNC, 0664);
+	fd_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	while (letters > 0)
 	{
 		letters = read(fd_from, buff, 1024);
