@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - copies the content of a file to another file
  *@ac: argument count
@@ -16,7 +15,6 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-
 	fd_from = open(av[1], O_RDONLY);
 	fd_to = open(av[2], O_CREAT | O_RDWR | O_TRUNC, 0664);
 	while (letters > 0)
@@ -34,14 +32,12 @@ int main(int ac, char **av)
 			exit(99);
 		}
 	}
-
 	fd_close1 = close(fd_from);
 	if (fd_close1 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd_from);
 		exit(100);
 	}
-
 	fd_close2 = close(fd_to);
 	if (fd_close2 == -1)
 	{
