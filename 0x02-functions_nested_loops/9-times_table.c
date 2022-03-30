@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 #include "main.h"
 
 /**
@@ -36,4 +34,3 @@ void times_table(void)
 		_putchar('\n');
 	}
 }
->>>>>>> 9b9ffab5862e874cb510620a6cd243bb9563c6d6
