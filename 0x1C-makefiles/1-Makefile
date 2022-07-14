@@ -1,0 +1,7 @@
+all: exec
+
+CC = gcc
+SRC = *.c
+
+exec:
+	${CC} ${SRC} -o school
