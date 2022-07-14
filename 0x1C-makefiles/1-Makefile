@@ -1,7 +1,5 @@
 all: exec
-
 CC = gcc
-SRC = *.c
-
+SRC = main.c school.c
 exec:
 	${CC} ${SRC} -o school
