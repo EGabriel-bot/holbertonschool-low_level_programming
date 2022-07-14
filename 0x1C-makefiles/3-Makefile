@@ -2,7 +2,7 @@ CC = gcc
 SRC = main.c school.c
 OBJ = ${SRC:.c=.o}
 NAME = school
-RM = rm -r
+RM = rm -rf
 all:${OBJ}
 	${CC} ${OBJ}
 clean:
@@ -10,6 +10,6 @@ clean:
 oclean:
 	${RM} ${OBJ}
 fclean:
-	${RM} ${OBJ}
+	clean oclean
 re:
-	${CC} ${OBJ}
+	fclean all
