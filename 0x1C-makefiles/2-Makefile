@@ -1,0 +1,7 @@
+all: exec
+CC := gcc
+SRC := ${wildcard *.c}
+OBJ := ${wildcard *.o}
+NAME := school
+exec:
+	${CC} -c -o ${OBJ} ${SRC}
